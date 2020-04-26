@@ -1,0 +1,368 @@
+body {
+    color: white;
+    box-sizing: border-box;
+    background-color: orange;
+    margin: 0;
+    height: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.favorites p {
+    font-size: 50%;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.favorites p:hover, a:hover {
+    text-decoration: underline;
+}
+
+main div {
+    display: flex;
+    height: 100%;
+    flex: 1;
+}
+
+.column1, .column3 {
+    flex-basis: 75px;
+    background-color: orange;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    flex-shrink: 0;
+    width: 25%;
+}
+
+.column1 {
+    border-right: 1px solid white;
+}
+
+.column3 {
+    border-left: 1px solid white;
+}
+
+
+.column2 {
+    background-color: orange;
+    background-image: url('../img/background.jpeg');
+    flex: 1;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#back-button {
+    object-position: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+html {
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+form {
+    text-align: center;
+}
+
+#comment {
+    font-size: 10%;
+}
+
+.column3 input {
+    font-size: 5%;
+    height: 15px;
+}
+
+.card {
+    flex: 0 0 75px;
+    height: 50px;
+    flex-direction: column;
+    background-image: url('../img/basketball-wall.jpg');
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+    justify-content: center;
+}
+
+#menu-bar {
+    height: 30px;
+    width: 35px;
+}
+
+a {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.news-box {
+    width: 80%;
+    margin: 1em auto;
+    height: 50%;
+    padding-top: 2em;
+    overflow-y: scroll;
+}
+
+.news-post {
+    height: 60%;
+    width: 100%;
+}
+
+.news-card {
+    height: 70%;
+}
+
+.profile-box {
+    width: 90%;
+    margin: 1em auto;
+    height: 75%;
+    padding-top: 2em;
+}
+
+.news-card, .profile-card {
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    color: white;
+    min-width: 0;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: .25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+    flex-shrink: 0;
+}
+
+.profile-card {
+    height: 100%;
+}
+
+.shared {
+    font-size: 10%;
+    margin-left: 1em;
+}
+
+button:hover {
+    background-color:  grey;
+    color: white;
+}
+
+.star {
+    height: 0px;
+    width: 0px;
+}
+
+.stats-header {
+    text-align: left;
+    text-decoration: underline;
+    margin-left: 3em;
+}
+
+.stats-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    flex: 0 0 200px;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    height: 100px;
+    margin: .5em auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+#player {
+    background-image: url('../img/player.jpg');
+}
+
+#team {
+    background-image: url('../img/team.jpg');
+}
+
+.border {
+    border: 1px solid white;
+    border-radius: .25rem
+}
+
+#back-button {
+    margin-left: 2em;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+}
+
+table {
+    width: 100%;
+    background-color: black;
+}
+
+.table-box {
+    padding: 2em 1em;
+}
+
+th {
+    text-align: left;
+    background-color: gray;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th, td {
+    font-size: 6pt;
+}
+
+.lebron {
+    font-size: 10px;
+    text-align: center;
+}
+
+.foot {
+    padding-top: 1em;
+}
+
+footer {
+    text-align: center;
+}
+
+.favorites {
+    height: 30%;
+    background-color: black;
+    margin: .5rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+@media (min-width:768px) {
+
+    .favorites p {
+        font-size: 80%;
+        padding-bottom: 2em;
+    }
+
+    input {
+        font-size: 14pt;
+        height: 20px;
+    }
+    
+    .profile-box {
+        width: 40%;
+        margin: 1em auto;
+        height: 75%;
+        padding-top: 2em;
+    }
+
+    .shared {
+        font-size: 10px;
+        margin-left: 1em;
+    }
+
+    .news-post {
+        height: 70%;
+        width: 100%;
+    }
+
+    .news-box {
+        width: 50%;
+        margin: 1em auto;
+        height: 80%;
+        padding-top: 2em;
+    }
+
+    .news-card {
+        height: 90%;
+    }
+
+    .lebron {
+        font-size: 14px;
+    }
+
+    .stat-card {
+        flex: 0 0 300px;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: center;
+        height: 200px;
+        margin: .5em auto;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+    }
+
+    th, td {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width:992px) {
+    .news-box {
+        width: 50%;
+        margin: 1em auto;
+        height: 70%;
+        padding-top: 2em;
+    }
+
+    .news-post {
+        height: 70%;
+        width: 100%;
+    }
+
+    #comment {
+        font-size: 14pt;
+        height: 20px;
+    }
+
+    .card {
+        flex: 0 0 150px;
+        height: 100px;
+        flex-direction: column;
+        background-image: url('../img/basketball-wall.jpg');
+        border-radius: 10px;
+        justify-content: center;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+    }
+
+    .column1, .column3 {
+        flex-basis: 240px;
+        background-color: orange;
+        flex-direction: column;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        flex-shrink: 0;
+    }
+
+    .column3 input {
+        font-size: 12px;
+        height: 15px;
+    }
+
+    .star {
+        height: 20px;
+        width: 20px;
+    }
+}
