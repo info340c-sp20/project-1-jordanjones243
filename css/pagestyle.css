@@ -14,9 +14,16 @@ main {
     height: 100%;
 }
 
+#submit {
+    font-size: 15%;
+}
+
+.stat-input {
+    padding-right: 1em;
+}
+
 .favorites p {
     font-size: 50%;
-    padding-bottom: 2em;
     text-align: center;
 }
 
@@ -74,6 +81,7 @@ html {
 }
 
 ul {
+    color: white;
     list-style-type: none;
 }
 
@@ -81,8 +89,22 @@ form {
     text-align: center;
 }
 
-#comment {
+.comment, .input-button, #clear-button {
     font-size: 10%;
+}
+
+
+.input-button, #comment-button, #clear {
+    background-color: black;
+    color: white;
+}
+
+#clear {
+    font-size: 12pt;
+}
+
+#clear-button {
+    flex-direction: column;
 }
 
 .column3 input {
@@ -112,10 +134,15 @@ form {
     width: 35px;
 }
 
-a {
+nav {
     text-align: center;
     color: white;
     font-weight: 500;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 .news-box {
@@ -127,19 +154,24 @@ a {
 }
 
 .news-post {
-    height: 60%;
-    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 .news-card {
-    height: 70%;
+    height: auto;
 }
 
 .profile-box {
     width: 90%;
     margin: 1em auto;
-    height: 75%;
     padding-top: 2em;
+    height: 60%;
+}
+
+.profile-pic {
+    height: 70%;
+    width: 100%;
 }
 
 .news-card, .profile-card {
@@ -160,8 +192,9 @@ a {
 }
 
 .shared {
-    font-size: 10%;
-    margin-left: 1em;
+    font-size: 12pt;
+    margin-top: 1em;
+    text-align: center;
 }
 
 button:hover {
@@ -218,7 +251,7 @@ button:hover {
 table {
     width: 100%;
     background-color: black;
-}
+} 
 
 .table-box {
     padding: 2em 1em;
@@ -260,6 +293,18 @@ footer {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
 }
 
+.fav-button {
+    background-color: orange;
+}
+
+.error {
+    text-align: center;
+}
+
+.search-label {
+    display: none;
+}
+
 @media (min-width:768px) {
 
     .favorites p {
@@ -280,24 +325,14 @@ footer {
     }
 
     .shared {
-        font-size: 10px;
+        font-size: 14px;
         margin-left: 1em;
-    }
-
-    .news-post {
-        height: 70%;
-        width: 100%;
     }
 
     .news-box {
         width: 50%;
         margin: 1em auto;
-        height: 80%;
         padding-top: 2em;
-    }
-
-    .news-card {
-        height: 90%;
     }
 
     .lebron {
@@ -327,12 +362,7 @@ footer {
         padding-top: 2em;
     }
 
-    .news-post {
-        height: 70%;
-        width: 100%;
-    }
-
-    #comment {
+    .comment {
         font-size: 14pt;
         height: 20px;
     }

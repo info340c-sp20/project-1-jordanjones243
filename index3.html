@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Jordan Jones">
-    <meta name="Stats Page" content="interactive page that displays stats of NBA players and teams">
+    <meta name="Stats Page" description="interactive page that displays stats of NBA players and teams">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>NBA Analytics</title>
 
@@ -14,63 +14,65 @@
 
 <body>
     <main>
-        <div id="page">
+        <div>
             <section class="column1">
-                <img src="img/menu-bar.png" alt="menu bar" id="menu-bar">
                 <h2>Menu</h2>
                 <div class="card-container">
                     <div class="card border">
-                        <a href="index.html" class="link" role="link">News Feed</a>
+                        <nav><a href="index.html" class="link" role="link">News Feed</a></nav>
                     </div>
-
                     <div class="card border">
-                        <a href="index3.html" class="link" role="link">Stats</a>
+                        <nav><a href="index3.html" class="link" role="link">Stats</a></nav>
                     </div>
-
                     <div class="card border">
-                        <a href="index2.html" class="link" role="link">Profile</a>
+                        <nav><a href="index2.html" class="link" role="link">Profile</a></nav>
                     </div>
                 </div>
             </section>
 
             <section class="column2">
                 <h2>Stats</h2>
-                <div class="stats-box">
-                    <div class="stat-card border" id="player">
-                        <a href="playerstats.html" role="link">Player Stats (League Leaders) - Per Game</a>
-                    </div>
-                    <div class="stat-card border" id="team">
-                        <a href="teamstats.html" role="link">Team Stats - Per Game</a>
-                    </div>
+                <h3>Would you like to view player or team stats?</h3>
+                <form class="stats">
+                    <input for="radio" type="radio" id="player" name="stats" value="player">
+                    <label for="player" class="stat-input">Player</label>
+                    <input for="radio" type="radio" id="team" name="stats" value="team">
+                    <label for="team" class="stat-input">Team</label>
+                </form>
+                <div class="table-box">
+                    <table role="table">
+                        <!-- Where the tables will be generated -->
+                    </table>
                 </div>
             </section>
 
             <section class="column3">
                 <h2>Favorites</h2>
-                <form role="form">
-                    <label for="search"></label><input type="text" placeholder="Search..." id="search" name="search">
+                <form class="fav-form" role="form">
+                    <label for="search" class="search-label">Search</label><input for="text" type="text" placeholder="Search..." id="search" name="search">
+                    <button class="input-button">Add</button>
                 </form>
                 <section class="favorites">
-                    <h3>Teams</h3>
-                    <p>Dallas Mavericks <img src="img/star.png" alt="star" class="star"></p>
-                    <p>Los Angeles Lakers <img src="img/star.png" alt="star" class="star"></p>
-                    <p>Miami Heat <img src="img/star.png" alt="star" class="star"></p>
+                    <!-- Where the favorites will be generated -->
                 </section>
-                <section class="favorites">
-                    <h3>Players</h3>
-                    <p>Anthony Davis <img src="img/star.png" alt="star" class="star"></p>
-                    <p>Kyrie Irving <img src="img/star.png" alt="star" class="star"></p>
-                    <p>Lebron James <img src="img/star.png" alt="star" class="star"></p>
-                </section>
+                <div id="clear-button">
+                    <button id="clear">Clear All</button>
+                </div>
             </section>
         </div>
     </main>
 
     <footer class="foot">
+        <p>Stats ordered by PPG Descending</p>
         <address>
             Contact me at <a href="mailto:jmj243@uw.edu">jmj243@uw.edu</a>.
         </address>
         <p>&copy;2020 NBA-A</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src="js/stats.js"></script>
 </body>
 </html>
