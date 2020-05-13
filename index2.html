@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jordan Jones">
+    <meta name="Profile Page" description="interactive page that displays the profile of a user">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NBA Analytics</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/pagestyle.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <section class="column1">
+                <h2>Menu</h2>
+                <div class="card-container">
+                    <div class="card border">
+                        <nav><a href="index.html" class="link" role="link">News Feed</a></nav>
+                    </div>
+                    <div class="card border">
+                        <nav><a href="index3.html" class="link" role="link">Stats</a></nav>
+                    </div>
+                    <div class="card border">
+                        <nav><a href="index2.html" class="link" role="link">Profile</a></nav>
+                    </div>
+                </div>
+            </section>
+
+            <section class="column2">
+                <h2>Profile</h2>
+                <div class="profile-box">
+                    <div class="profile-card">
+                        <img src="img/profile.jpg" alt="profile pic" class="profile-pic">
+                        <p class="shared">John Smith - @johnsmith243</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="column3">
+                <h2>Favorites</h2>
+                <form class="fav-form" role="form">
+                    <label for="search" class="search-label">Search</label><input for="text" type="text" placeholder="Search..." id="search" name="search">
+                    <button class="input-button">Add</button>
+                </form>
+                <section class="favorites">
+                    <!-- Where the favorites will be generated -->
+                </section>
+                <div id="clear-button">
+                    <button id="clear">Clear All</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="foot">
+        <address>
+            Contact me at <a href="mailto:jmj243@uw.edu">jmj243@uw.edu</a>.
+        </address>
+        <p>&copy;2020 NBA-A</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
