@@ -64,10 +64,6 @@ main div {
     border-bottom: 1px solid white;
 }
 
-#back-button {
-    object-position: left;
-}
-
 h2 {
     text-align: center;
 }
@@ -246,6 +242,7 @@ button:hover {
     font-size: 14px;
     background-color: black;
     color: white;
+    object-position: left;
 }
 
 table {
