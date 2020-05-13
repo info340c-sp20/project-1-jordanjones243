@@ -136,7 +136,7 @@ nav {
     font-weight: 500;
 }
 
-a:visited {
+a, a:visited {
     text-decoration: none;
     color: white;
 }
