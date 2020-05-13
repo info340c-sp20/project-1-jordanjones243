@@ -2,6 +2,8 @@ var favCount = 0;
 var errorCount = 0;
 var queries = [];
 
+/* global d3 */
+
 document.querySelector('#player').addEventListener('click', function() {
     document.querySelector('table').remove();
     document.querySelector('.table-box').appendChild(document.createElement('table'));
