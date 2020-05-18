@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jordan Jones">
+    <meta name="Newsfeed Page" description="interactive page that displays a news feed">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NBA Analytics</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pagestyle.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <section class="column1">
+                <h2>Menu</h2>
+                <div class="card-container">
+                    <div class="card border">
+                        <nav><a href="index.html" class="link" role="link">News Feed</a></nav>
+                    </div>
+                    <div class="card border">
+                        <nav><a href="index3.html" class="link" role="link">Stats</a></nav>
+                    </div>
+                    <div class="card border">
+                        <nav><a href="index2.html" class="link" role="link">Profile</a></nav>
+                    </div>
+                </div>
+            </section>
+
+            <section class="column2">
+                <h2>News Feed</h2>
+                <div class="news-box">
+                    <div class="news-card">
+                        <p class="lebron"><img src="img/star.png" alt="star" class="star"> Lebron James moves up to 3rd on the NBA all-time scoring list! <img src="img/star.png" alt="star" class="star"></p>
+                        <img src="img/lebron.jpg" alt="lebron james" class="news-post">
+                    </div>
+                </div>
+            </section>
+
+            <section class="column3">
+                <h2>Favorites</h2>
+                <form class="fav-form" role="form">
+                    <label for="search" class="search-label">Search</label><input for="text" type="text" placeholder="Search..." id="search" name="search">
+                    <button class="input-button">Add</button>
+                </form>
+                <section class="favorites">
+                    <!-- Where the favorites will be generated -->
+                </section>
+                <div id="clear-button">
+                    <button id="clear">Clear All</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Photo of Lebron James from <cite><a href="https://www.forbes.com/sites/tommybeer/2019/11/08/lebron-james-making-an-early-case-for-another-mvp-is-off-to-a-historic-start-this-season/#5354139f6a5b">Forbes</a></cite></p>
+        <address>
+            Contact me at <a href="mailto:jmj243@uw.edu">jmj243@uw.edu</a>.
+        </address>
+        <p>&copy;2020 NBA-A</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>

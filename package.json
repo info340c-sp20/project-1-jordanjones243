@@ -35,5 +35,9 @@
         "error"
       ]
     }
+  },
+  "dependencies": {
+    "d3-fetch": "^1.1.2",
+    "live-server": "^1.2.1"
   }
 }
